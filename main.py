@@ -4,6 +4,6 @@ userimp = input("Enter a sentance: ")
 shift = int(input("Enter a shift: "))
 for each in userimp:
   if each in alph:
-    newlet=alph[alph.index(each)+shift]
+    newlet=alph[(alph.index(each)+shift) % 26]
     newsentance += newlet
 print(newsentance)
